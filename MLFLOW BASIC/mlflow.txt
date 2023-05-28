@@ -1,0 +1,50 @@
+1-if we run an experiment again without changing its name then it will not create a new experiment, it simply create a new run
+2-best practice- just change  the metrics and pass those under the same experiment to create a new run with diff values
+3-normally it store the runs in local-file as a backend storage
+4-mlflow ui
+5-sqlite-database as a backend storage
+6-mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 --port 5000
+7-if you run the registered model again then it will create a new model
+8-serve the model-mlflow models serve --model-uri models:/iris-classifier-2/Production -p 1234 --no-conda
+9-Inside a run we need to create model, fit and predict. Also log the params, artifacts and metrics.
+10-There are 3 ways to register a model.
+a-by creating a empty skeleton and then register an existing model
+b-register during the run itself
+c-and register an existing model 
+11-Autolog support below libraries-
+xg boost
+gluon
+spark
+pytorch
+scikit learn
+12-Logging model options-
+a-Log model as an artifacts
+b-Log model using the (log_model) method
+13-We can load a logged model by two flavours-
+a-as a pyhton 
+b-as a sklearn
+14-Model registry has three stages-
+a-stage
+b-production
+c-archieve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
