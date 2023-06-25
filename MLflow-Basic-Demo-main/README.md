@@ -70,7 +70,8 @@ mlflow server -h 0.0.0.0 --default-artifact-root s3://mlflow-test-23
 
 #set uri in your local terminal and in your code 
 export MLFLOW_TRACKING_URI=http://ec2-54-147-36-34.compute-1.amazonaws.com:5000/
-```
 
 python example.py
+```
+
 
